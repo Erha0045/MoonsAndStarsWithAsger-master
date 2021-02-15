@@ -10,6 +10,16 @@ class MoonTest {
     Moon moon = new Moon("Moon", 60000, earth, 27);
 
 
+
+    @Test
+    public void name() {
+        //arrange
+        String exp = "Moon";
+        //act
+        String result = moon.getName();
+        //assert
+        assertEquals(exp,result,"Test af name er ikke gennemført");
+    }
     @Test
     public void mass() {
         //arrange
@@ -27,7 +37,7 @@ class MoonTest {
         //act
         double result = moon.getTimeToOrbitePlanet();
         //assert
-        assertEquals(exp,result);
+        assertEquals(exp,result,"Test af timeToOrbitPlanet er ikke gennemført");
     }
 
 
