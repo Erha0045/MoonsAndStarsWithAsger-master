@@ -15,6 +15,10 @@ public abstract class OrbitalBody {
       this.masse = masse;
    }
 
+   public OrbitalBody(String name) {
+      this.name = name;
+   }
+
    public String getName() {
       return name;
    }
@@ -48,7 +52,7 @@ public abstract class OrbitalBody {
               '}';
    }
 
-   public abstract void orbitsAround ();
+   //public abstract void orbitsAround ();
 }
 
 

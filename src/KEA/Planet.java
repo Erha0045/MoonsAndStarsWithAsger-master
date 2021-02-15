@@ -12,6 +12,10 @@ public class Planet extends OrbitalBody{
 
     }
 
+    public Planet(String name) {
+        super(name);
+    }
+
     public Planet(String name, int masse, int numberOfMoons, int distanceToSun, int timeToOrbitSun) {
         super(name, masse);
         this.numberOfMoons = numberOfMoons;
@@ -54,10 +58,9 @@ public class Planet extends OrbitalBody{
                 '}';
     }
 
-    @Override
-    public void orbitsAround() {
-
-    }
+//    @Override
+//    public void orbitsAround() {
+//    }
 
 
     @Override
